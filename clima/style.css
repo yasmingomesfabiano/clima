@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url(/assets/nuvens.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    overflow-y: auto; 
+    background-attachment: fixed;
+    
+}
+
+
+
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Bowling', sans-serif;
+    word-spacing: 5px; 
+    letter-spacing: 5px;   
+    color: #ff7d00;                                     
+}
+
+.cidade {
+    width: 250px;           
+    padding: 10px 15px;     
+    font-size: 16px;        
+    border: 2px solid #ccc; 
+    border-radius: 10px;    
+    outline: none;   
+    color: #012a4a;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    max-width: 700px;
+    min-height: 60vh;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    margin: 60px 0;
+    
+    
+
+/* quando a classe .expandir for adicionada via JS */
+.container.expandir {
+    transform: scale(1.0); 
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+}
+h2{
+    font-size: 50px;
+    font-family: 'Caitiff', sans-serif;
+    letter-spacing: 2px;   
+    color: #012a4a;  
+    text-align: center;                                      
+}
+
+.button{
+    width: 9vw;
+    height: 4vh;
+    font-size: 25px;
+    border-radius: 30%;
+    border: #fb8500;
+    font-family: 'Jana', sans-serif;
+    color: #012a4a;
+    transition: 0.3s;
+}
+
+.button:hover{
+    color: #ccc;
+    transform: scale(1.1);
+}
+
+p{
+    text-align: center;
+}
+
+.temperatura{
+    font-size: 60px;
+    font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
+    color: #ff7d00;                                            
+}
+
+.descricao{
+    font-size: 20px;
+    font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
+    color: #012a4a; 
+     
+}
+
+.umidade{
+    font-size: 20px;
+    font-family: 'Noto Serif Ottoman Siyaq', sans-serif;
+    color: #012a4a;    
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'Caitiff', sans-serif;
+    letter-spacing: 2px;   
+    color: #012a4a;  
+    text-align: center;  
+}
+
+#titulo-previsao,
+#previsao {
+    display: none;
+    margin-top: 20px;
+    flex-wrap: wrap;            
+    justify-content: center;    
+    gap: 10px;                 
+}
+  
+  #previsao p {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 12px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.4;
+    backdrop-filter: blur(6px);
+  }
